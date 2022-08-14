@@ -1,4 +1,5 @@
-### Hi there 👋
+### Hi there 👋 <img align='right' src='https://github-readme-stats.vercel.app/api?username=RManLuo&show_icons=true&theme=cobalt' width='380px'>
+
 
 <!--
 **yuanweize/yuanweize** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +15,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github)](https://github.com/RManLuo)
+![](https://visitor-badge.glitch.me/badge?page_id=RManLuo.README) 
