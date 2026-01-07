@@ -9,7 +9,7 @@
 <br/>
 <br/>
 
-<img src="https://github.com/yuanweize/yuanweize/releases/download/metrics/github-metrics.svg" alt="GitHub Metrics" width="100%">
+<img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="100%">
 
 <!-- <br/>
 
