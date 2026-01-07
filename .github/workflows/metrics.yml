@@ -1,0 +1,37 @@
+name: Metrics
+on:
+  # 每天 00:00 自动更新
+  schedule: [{cron: "0 0 * * *"}]
+  # 允许手动触发
+  workflow_dispatch:
+  # 当 main 分支有 push 时触发
+  push: {branches: ["main", "master"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 你的 Token Secret
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 基础设置
+          user: yuanweize
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Prague
+          
+          # 插件设置 (让它看起来很专业)
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            gnuplot
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_colors: "github"
+          plugin_languages_threshold: 0%
+          
+          plugin_lines: yes
