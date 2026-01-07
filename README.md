@@ -8,10 +8,17 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="65%">
-
-<br/>
-
-<img src="https://github-readme-stats-5ubszqen9-yuanweizes-projects.vercel.app/api?theme=cobalt&username=yuanweize&show_icons=true&hide_border=true&hide_title=true" height="150px">
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats-5ubszqen9-yuanweizes-projects.vercel.app/api/top-langs/?username=yuanweize&layout=compact&theme=cobalt&hide_border=true" width="100%">
+      <br/><br/>
+      <img src="https://github-readme-stats-5ubszqen9-yuanweizes-projects.vercel.app/api?theme=cobalt&username=yuanweize&show_icons=true&hide_border=true&hide_title=true" width="100%">
+    </td>
+  </tr>
+</table>
 
 </div>
