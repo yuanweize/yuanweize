@@ -1,4 +1,4 @@
-## Hi there, I’m **Gaga**🦆 <img align='right' src='https://github-readme-stats.vercel.app/api?username=yuanweize&show_icons=true&theme=cobalt' width='380px'>
+## Hi there, I’m **Gaga**🦆 <img align='right' src='https://github-readme-stats-5ubszqen9-yuanweizes-projects.vercel.app/api?username=yuanweize&show_icons=true&theme=cobalt' width='380px'>
 
 
 <!--
