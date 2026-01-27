@@ -1,7 +1,10 @@
 name: Metrics
 on:
   # 每天 00:00 自动更新
-  schedule: [{cron: "0 0 * * *"}]
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "0 13 * * *"
+    - cron: "0 19 * * *"
   # 允许手动触发
   workflow_dispatch:
   # 当 main 分支有 push 时触发
