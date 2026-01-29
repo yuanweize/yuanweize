@@ -7,9 +7,9 @@
 
 <br/>
 
+[![yuanweize's GitHub stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=ocean_dark&show_icons=true)](https://github.com/yuanweize)
+
 <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="65%">
 
-
-[![yuanweize's GitHub stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=ocean_dark&show_icons=true)](https://github.com/yuanweize)
 </div>
 
