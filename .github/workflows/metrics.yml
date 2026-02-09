@@ -39,8 +39,8 @@ jobs:
           # --- 插件：行数统计 (这里是显示 400万行 的关键) ---
           plugin_lines: yes
           # 加上这行确保统计所有历史，让数字变大
-          plugin_lines_history_limit: 1 
-          plugin_lines_repositories_limit: 20
+          plugin_lines_history_limit: 0 
+          plugin_lines_repositories_limit: 0
 
           # --- 插件：3D 提交日历 ---
           plugin_isocalendar: yes
