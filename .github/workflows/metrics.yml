@@ -34,8 +34,7 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_colors: "github"
           plugin_languages_threshold: 0%
-          # 如果你觉得 MB 太小不好看，可以去掉 bytes-size，只留 percentage
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_details:  percentage
 
           # --- 插件：行数统计 (这里是显示 400万行 的关键) ---
           plugin_lines: yes
@@ -48,7 +47,7 @@ jobs:
           plugin_isocalendar_duration: full-year
 
           # --- 插件：GitHub 成就 ---
-          plugin_achievements: yes
+          plugin_achievements: no
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
           # 🛑 必须设为 no，否则会报 "Unexpected error" 导致整个 Action 失败
