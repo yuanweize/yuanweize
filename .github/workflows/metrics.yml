@@ -3,8 +3,8 @@ on:
   # --- 保持你原来的执行频率 (每天 3 次) ---
   schedule:
     - cron: "0 23 * * *"
-    - cron: "0 11 * * *"
     - cron: "0 17 * * *"
+    - cron: "0 11 * * *"
   # 允许手动触发
   workflow_dispatch:
   # 当 main 分支有 push 时触发
