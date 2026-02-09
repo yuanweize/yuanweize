@@ -47,7 +47,7 @@ jobs:
           plugin_achievements_display: compact
           # ⚠️ 如果还是报错，尝试把 threshold 改为 B 或 A，或者暂时设为 no
           plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
+          plugin_achievements_secrets: no
           plugin_achievements_limit: 0
 
           # --- 新增插件：Steam ---
