@@ -7,14 +7,10 @@
 
 <br/>
 
-[![yuanweize's GitHub stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=panda&show_icons=true)](https://github.com/yuanweize)
+[![yuanweize's GitHub stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=panda&show_icons=true&count_private=true&show=reviews)](https://github.com/yuanweize)
 
 <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="65%">
 
 </div>
 
-![YUANWEIZE's GitHub Stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=panda&show_icons=true&count_private=true&show=reviews)
 
-![YUANWEIZE's GitHub Stats](https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=panda&show_icons=true&count_private=true&hide_rank=true)
-
-![Top Langs](https://github-readme-stats-seven-inky-41.vercel.app/api/top-langs/?username=yuanweize&layout=compact&theme=panda)
