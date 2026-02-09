@@ -21,11 +21,11 @@ jobs:
           # --- 基础配置 ---
           user: yuanweize
           template: classic
-          # ✅ 按照要求：保留了 community
+          # ✅ 保留 community
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Prague
 
-          # --- 插件：语言 (显示文件体积) ---
+          # --- 插件：语言 (只显示百分比，不显示 MB) ---
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
@@ -34,30 +34,32 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_colors: "github"
           plugin_languages_threshold: 0%
-          plugin_languages_details:  percentage
+          # ✅ 你的要求：去掉 bytes-size，只留百分比
+          plugin_languages_details: percentage
 
-          # --- 插件：行数统计 (这里是显示 400万行 的关键) ---
+          # --- 插件：行数统计 (火力全开模式) ---
           plugin_lines: yes
-          # 加上这行确保统计所有历史，让数字变大
-          plugin_lines_history_limit: 0 
-          plugin_lines_repositories_limit: 0
+          # ✅ 0 代表不限制年份（统计所有历史）
+          plugin_lines_history_limit: 0
+          # ✅ 改为 200，确保覆盖你的 183 个仓库 (设为 0 可能会导致只扫默认的 4 个)
+          plugin_lines_repositories_limit: 2000
 
           # --- 插件：3D 提交日历 ---
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # --- 插件：GitHub 成就 ---
+          # --- 插件：GitHub 成就 (已关闭) ---
+          # ✅ 你设为了 no，整个成就板块会隐藏
           plugin_achievements: no
           plugin_achievements_display: compact
           plugin_achievements_threshold: C
-          # 🛑 必须设为 no，否则会报 "Unexpected error" 导致整个 Action 失败
           plugin_achievements_secrets: no 
           plugin_achievements_limit: 0
 
           # --- 插件：Steam ---
           plugin_steam: yes
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
-          # ✅ 你的正确 ID
+          # ✅ 你的 ID
           plugin_steam_user: "76561198444894836"
           plugin_steam_sections: player, most-played, recently-played
           plugin_steam_games_limit: 1
