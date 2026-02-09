@@ -24,7 +24,7 @@ jobs:
           user: yuanweize
           template: classic
           # ✅ 核心改动：移除了 community，版面更紧凑
-          base: header, activity, repositories, metadata
+          base: header, activity, community, repositories, metadata
           config_timezone: Europe/Prague
 
           # --- 插件：语言 ---
