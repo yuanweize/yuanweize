@@ -54,7 +54,7 @@ jobs:
           plugin_steam: yes
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
           # 🛑 下面这行必须改成你自己的 64位 Steam ID (数字)
-          plugin_steam_user: "iyuanweize"
+          plugin_steam_user: "76561198444894836"
           # 显示：个人资料、玩得最多的游戏、最近玩的游戏
           plugin_steam_sections: player, most-played, recently-played
           # 显示玩得最多的游戏数量
