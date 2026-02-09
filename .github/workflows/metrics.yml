@@ -1,6 +1,6 @@
 name: Metrics
 on:
-  # 每天 00:00 自动更新
+  # --- 保持你原来的执行频率 (每天 3 次) ---
   schedule:
     - cron: "0 23 * * *"
     - cron: "0 11 * * *"
@@ -18,23 +18,38 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 你的 Token Secret
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # 基础设置
+          # --- 基础配置 ---
           user: yuanweize
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Prague
           
-          # 插件设置 (让它看起来很专业)
+          # --- 优化：隐藏空数据 (不显示 Sponsors: 0 等) ---
+          repositories_affiliations: owner, collaborator
+
+          # --- 插件：语言 (保留你的设置) ---
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
+            gnuplot, roff, jupyter notebook
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_colors: "github"
           plugin_languages_threshold: 0%
-          
-          plugin_lines: yes
+          # 建议：显示具体字节大小，看起来更详细
+          plugin_languages_details: bytes-size, percentage
+
+          # --- 新增插件：3D 提交日历 (填充底部空白，非常帅) ---
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # --- 新增插件：成就徽章 (展示你的 GitHub 里程碑) ---
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C 
+
+          # --- 移除 plugin_lines ---
+          # (因为之前它显示 "+0 added, 0 removed"，删掉后版面更干净)
+          plugin_lines: no
