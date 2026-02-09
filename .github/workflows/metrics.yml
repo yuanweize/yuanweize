@@ -28,7 +28,7 @@ jobs:
           # --- 插件：语言 (只显示百分比，不显示 MB) ---
           plugin_languages: yes
           plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            html, css, less, dockerfile, makefile, qmake, lex, cmake, shell,
             gnuplot, roff, jupyter notebook
           plugin_languages_limit: 10
           plugin_languages_sections: most-used
