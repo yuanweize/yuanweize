@@ -19,23 +19,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Hot-patch metrics docker image
-        run: |
-          echo "Building patched metrics image..."
-          cat << 'EOF' > Dockerfile.patch
-          FROM ghcr.io/lowlighter/metrics:v3.34
-          RUN sed -i 's/if (data.account)/if (data.account === "organization")/g' /metrics/source/plugins/lines/index.mjs && \
-              sed -i 's/contributor.author.login/contributor.author?.login || "unknown"/g' /metrics/source/plugins/lines/index.mjs && \
-              sed -i 's/plugins.lines.sections.includes/plugins.lines.sections?.includes/g' /metrics/source/templates/classic/partials/lines.ejs
-          EOF
-          docker build -t metrics:3.34.0 -t metrics:3.35.0-beta -f Dockerfile.patch .
-          echo "Patched metrics image ready."
-
-      - uses: lowlighter/metrics@latest
+      - name: Generate metrics
+        uses: yuanweize/metrics-community@v3.35.0-community.1
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          use_prebuilt_image: no
-          retries: 1
+          retries: 2
           retries_delay: 30
 
           # --- 基础配置 ---
