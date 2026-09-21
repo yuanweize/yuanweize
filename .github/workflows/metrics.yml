@@ -20,7 +20,7 @@ jobs:
       contents: write
     steps:
       - name: Generate metrics
-        uses: yuanweize/metrics-community@v3.35.0-community.2
+        uses: yuanweize/metrics-community@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           retries: 2
