@@ -21,17 +21,14 @@ jobs:
     steps:
       - name: Hot-patch metrics docker image
         run: |
-          echo "Pulling official metrics base image..."
-          docker pull ghcr.io/lowlighter/metrics:v3.34
-          echo "Patching lines plugin and template..."
-          docker run --name metrics-patcher --entrypoint /bin/sh ghcr.io/lowlighter/metrics:v3.34 -c '
-            sed -i "s/if (data.account)/if (data.account === \"organization\")/g" /metrics/source/plugins/lines/index.mjs
-            sed -i "s/contributor.author.login/contributor.author?.login || \"unknown\"/g" /metrics/source/plugins/lines/index.mjs
-            sed -i "s/plugins.lines.sections.includes/plugins.lines.sections?.includes/g" /metrics/source/templates/classic/partials/lines.ejs
-          '
-          docker commit metrics-patcher metrics:3.34.0
-          docker tag metrics:3.34.0 metrics:3.35.0-beta
-          docker rm metrics-patcher
+          echo "Building patched metrics image..."
+          cat << 'EOF' > Dockerfile.patch
+          FROM ghcr.io/lowlighter/metrics:v3.34
+          RUN sed -i 's/if (data.account)/if (data.account === "organization")/g' /metrics/source/plugins/lines/index.mjs && \
+              sed -i 's/contributor.author.login/contributor.author?.login || "unknown"/g' /metrics/source/plugins/lines/index.mjs && \
+              sed -i 's/plugins.lines.sections.includes/plugins.lines.sections?.includes/g' /metrics/source/templates/classic/partials/lines.ejs
+          EOF
+          docker build -t metrics:3.34.0 -t metrics:3.35.0-beta -f Dockerfile.patch .
           echo "Patched metrics image ready."
 
       - uses: lowlighter/metrics@latest
