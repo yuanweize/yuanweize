@@ -8,15 +8,38 @@ on:
   workflow_dispatch:
   push: {branches: ["main", "master"]}
 
+concurrency:
+  group: metrics-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: write
     steps:
+      - name: Hot-patch metrics docker image
+        run: |
+          echo "Pulling official metrics base image..."
+          docker pull ghcr.io/lowlighter/metrics:v3.34
+          echo "Patching lines plugin and template..."
+          docker run --name metrics-patcher --entrypoint /bin/sh ghcr.io/lowlighter/metrics:v3.34 -c '
+            sed -i "s/if (data.account)/if (data.account === \"organization\")/g" /metrics/source/plugins/lines/index.mjs
+            sed -i "s/contributor.author.login/contributor.author?.login || \"unknown\"/g" /metrics/source/plugins/lines/index.mjs
+            sed -i "s/plugins.lines.sections.includes/plugins.lines.sections?.includes/g" /metrics/source/templates/classic/partials/lines.ejs
+          '
+          docker commit metrics-patcher metrics:3.34.0
+          docker tag metrics:3.34.0 metrics:3.35.0-beta
+          docker rm metrics-patcher
+          echo "Patched metrics image ready."
+
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          use_prebuilt_image: no
+          retries: 1
+          retries_delay: 30
 
           # --- 基础配置 ---
           user: yuanweize
@@ -41,7 +64,7 @@ jobs:
           plugin_lines: yes
           # ✅ 0 代表不限制年份（统计所有历史）
           plugin_lines_history_limit: 0
-          # ✅ 改为 200，确保覆盖你的 183 个仓库 (设为 0 可能会导致只扫默认的 4 个)
+          # ✅ 最大展示排名的仓库数量
           plugin_lines_repositories_limit: 2000
 
           # --- 插件：3D 提交日历 ---
