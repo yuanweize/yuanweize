@@ -20,7 +20,7 @@ jobs:
       contents: write
     steps:
       - name: Generate metrics
-        uses: yuanweize/metrics-community@latest
+        uses: gh-metrics/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           retries: 2
