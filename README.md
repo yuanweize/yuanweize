@@ -1,52 +1,58 @@
 <div align="center">
 
-# Weize Yuan (Gaga) 🦆
+# Weize Yuan
 
-**Systems Engineer & Open-Source Builder**  
-Prague, Czech Republic 🇨🇿 · Czech Technical University in Prague (ČVUT FEL)
+**Systems Engineer · Open-Source Maintainer**
 
-[![Website](https://img.shields.io/badge/Website-eurun.top-f39f37?style=flat-square&logo=googlechrome&logoColor=white)](https://eurun.top/)
-[![Blog](https://img.shields.io/badge/Blog-HExLL-blue?style=flat-square&logo=hexo&logoColor=white)](https://yuanweize.github.io/)
-[![GitHub](https://img.shields.io/badge/GitHub-yuanweize-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/yuanweize)
+Managing Director @ **HKTSE s.r.o.** · Maintainer @ **EUR-UN**  
+Prague, Czech Republic · **ČVUT FEL alumnus**
 
-<p align="center">
-  Building high-reliability systems, network observability tools, assistive technology (AAC), and local AI inference pipelines.
+[HKTSE](https://hktse.eu.org) · [EUR-UN](https://eurun.eu.org) · [Technical Blog](https://yuanweize.github.io/) · [Email](mailto:info@eurun.eu.org)
+
+<br>
+
+<p>
+  I build and maintain systems around network observability, macOS storage automation,<br>
+  assistive technology, local AI, IoT infrastructure, and developer tooling.
 </p>
 
 </div>
 
 ---
 
-## 🚀 Flagship Original Projects
+## 🛠️ Selected Engineering Work
 
-| Project | Stack | Focus & Impact | Status |
-|---|---|---|---|
-| **[RouteLens](https://github.com/yuanweize/RouteLens)** | `Go` `Gin` `React` `Docker` | Agentless network observability platform pinpointing multi-hop latency and packet loss (Local vs Backbone vs DC) via stealth SSH probes. | `v2.3.0` |
-| **[LazyMount-Mac](https://github.com/yuanweize/LazyMount-Mac)** | `Shell` `macOS` `APFS` | Automated macOS NAS storage mount manager (SMB/Rclone) with surgical APFS repair resolving Steam disk write errors. | ★ 137+ |
-| **[OptiKey-ET5-Plugin](https://github.com/yuanweize/OptiKey-ET5-Plugin)** | `C#` `.NET` `Tobii SDK` | Open-source Tobii Eye Tracker 5 AAC plugin for OptiKey, enabling gaze-based computer control for people with ALS/MND. | `v0.1.1` (155 tests) |
-| **[Uni-OCR](https://github.com/yuanweize/Uni-OCR)** | `Python` `FastAPI` `MLX` | Unified multilingual OCR service with Apple Silicon MLX hardware acceleration, PaddleOCR, and Apple Vision backends. | PyPI · GHCR |
-| **[SmartHome_Server](https://github.com/yuanweize/SmartHome_Server)** | `Python` `MQTT` `Docker` | Full-stack smart home IoT platform with dual-broker mTLS (Mosquitto/EMQX), sensor fleet simulator, and Home Assistant integration. | Thesis Platform |
-| **[ERPNext-Czech-COA-Converter](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter)** | `Python` `ERPNext` `Render` | Dual-mode Czech Chart of Accounts (Decree 500/2002 & Státní pokladna) to ERPNext multilingual CSV converter. | Live on Render |
-
----
-
-## 🤝 Community Contributions & Ecosystem Work
-
-- **[yuanweize/metrics-community](https://github.com/yuanweize/metrics-community)**: Maintained community fork of [lowlighter/metrics](https://github.com/lowlighter/metrics) with automated upstream sync pipelines and multi-source update flows.
-- **[nezhahq/agent](https://github.com/nezhahq/agent)**: Upstream contributor fixing runtime configuration update variable shadowing ([PR #233](https://github.com/nezhahq/agent/pull/233)).
-- **[posquit0/Awesome-CV](https://github.com/yuanweize/Awesome-CV)**: Evidence-first career document and application bundles adapted for European engineering roles.
+| System | Focus & Capabilities | Evidence & Artifacts |
+|---|---|---|
+| **[RouteLens](https://github.com/yuanweize/RouteLens)** | Go-powered agentless network observability platform pinpointing multi-hop latency and packet loss (Local vs Backbone vs DC) via restricted SSH telemetry. | [Release](https://github.com/yuanweize/RouteLens/releases) · [Docs](https://github.com/yuanweize/RouteLens/tree/master/docs) · [Docker GHCR](https://github.com/yuanweize/RouteLens/pkgs/container/routelens) |
+| **[LazyMount-Mac](https://github.com/yuanweize/LazyMount-Mac)** | Automated macOS storage mount manager (SMB/Rclone) with APFS sparsebundle self-healing and launchd supervision for NAS gaming and cloud drives. | [Release](https://github.com/yuanweize/LazyMount-Mac/releases) · [Docs](https://github.com/yuanweize/LazyMount-Mac/tree/main/docs) · [ShellCheck CI](https://github.com/yuanweize/LazyMount-Mac/actions) |
+| **[OptiKey-ET5-Plugin](https://github.com/yuanweize/OptiKey-ET5-Plugin)** | Open-source Tobii Eye Tracker 5 assistive communication (AAC) plugin for OptiKey, enabling gaze-based access for people with ALS/MND. | [Release](https://github.com/yuanweize/OptiKey-ET5-Plugin/releases) · [Windows CI](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions) · [CodeQL](https://github.com/yuanweize/OptiKey-ET5-Plugin/security/code-scanning) |
+| **[Uni-OCR](https://github.com/yuanweize/Uni-OCR)** | Unified multilingual OCR service with Apple Silicon MLX hardware acceleration, PaddleOCR, and local API inference backends. | [Release](https://github.com/yuanweize/Uni-OCR/releases) · [Docker GHCR](https://github.com/yuanweize/Uni-OCR/pkgs/container/uni-ocr) · [CI Pipeline](https://github.com/yuanweize/Uni-OCR/actions) |
+| **[SmartHome_Server](https://github.com/yuanweize/SmartHome_Server)** | Smart home IoT telemetry gateway with dual-broker mTLS (Mosquitto/EMQX), sensor fleet simulation, and Home Assistant integration. | [Architecture](https://github.com/yuanweize/SmartHome_Server#architecture) · [Docker Stacks](https://github.com/yuanweize/SmartHome_Server/tree/main/broker) |
+| **[ERPNext-Czech-COA](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter)** | Czech Chart of Accounts (Účtová osnova Decree 500/2002 Sb.) importer and AI-assisted translation engine for ERPNext v14/v15. | [Release](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter/releases) · [FastAPI Engine](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter#web-ui) |
 
 ---
 
-## 🛠️ Core Engineering Focus
+## 🤝 Open-Source Maintenance & Upstream Work
 
-- **Systems & Networking**: Go, Linux network stack, multi-hop latency diagnosis, agentless monitoring, rclone, SMB.
-- **Assistive Technology**: C#, .NET runtime interop, Tobii Eye Tracking 5 SDK, AAC communication, accessibility.
-- **Local AI & Edge Computing**: Apple Silicon MLX-VLM, Python FastAPI, Home Assistant, MQTT mTLS, Docker Compose.
+- **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)**  
+  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), operated under EUR-UN with explicit upstream attribution, reviewed compatibility fixes, and multi-source update flows.
+- **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)**  
+  Contributor — Open [PR #113](https://github.com/gh-metrics/metrics/pull/113) (Steam plugin recently played games & time cutoff filter), Open [PR #114](https://github.com/gh-metrics/metrics/pull/114) (Lines plugin template error rendering guard).
+- **[nezhahq/agent](https://github.com/nezhahq/agent)**  
+  Upstream contributor — [PR #233](https://github.com/nezhahq/agent/pull/233) (Fix variable shadowing bug during runtime configuration hot-reload).
 
 ---
 
-## 📊 Compact Activity & Overview
+## 🎯 Technical Competencies
+
+- **Systems & Networking**: Go, Linux network stack, multi-hop latency telemetry, agentless probing, launchd, rclone, SMB, APFS.
+- **Assistive Technology & Accessibility**: C#, .NET runtime interop, Tobii Eye Tracking Core SDK, gaze coordinate smoothing, AAC systems.
+- **Local AI & Edge Computing**: Apple Silicon MLX-VLM, Python FastAPI, Home Assistant, MQTT mTLS architecture, Docker Compose.
+
+---
+
+## 📊 Overview
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="70%">
@@ -56,6 +62,7 @@ Prague, Czech Republic 🇨🇿 · Czech Technical University in Prague (ČVUT F
 
 ## 📬 Connect
 
-- **Personal Site**: [eurun.top](https://eurun.top/)
+- **Commercial / Company**: [HKTSE s.r.o.](https://hktse.eu.org)
+- **Open-Source Organization**: [EUR-UN](https://eurun.eu.org)
 - **Technical Blog**: [yuanweize.github.io](https://yuanweize.github.io/)
-- **Email**: `admin@eurun.top`
+- **Email**: [info@eurun.eu.org](mailto:info@eurun.eu.org)
