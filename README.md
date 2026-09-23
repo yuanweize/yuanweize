@@ -33,14 +33,24 @@ Prague, Czech Republic · **ČVUT FEL alumnus**
 
 ---
 
-## 🤝 Open-Source Maintenance & Upstream Work
+## 🤝 Open-Source Maintenance & Upstream Contributions
 
-- **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)**  
-  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), operated under EUR-UN with explicit upstream attribution, reviewed compatibility fixes, and multi-source update flows.
+### Upstream Contributions
+- **[emqx/hocon](https://github.com/emqx/hocon)**  
+  Contributor — [PR #318 (Merged)](https://github.com/emqx/hocon/pull/318)  
+  *Fix CLI two-phase staging and rollback on `ENOSPC` disk exhaustion*: Implemented atomic temporary staging, reverse-order rollback, permission-bit preservation, and real 1 MiB tmpfs ENOSPC fault-injection tests across 580+ Erlang/OTP regression suites.
 - **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)**  
-  Contributor — Open [PR #113](https://github.com/gh-metrics/metrics/pull/113) (Steam plugin recently played games & time cutoff filter), Open [PR #114](https://github.com/gh-metrics/metrics/pull/114) (Lines plugin template error rendering guard).
+  Contributor — Open [PR #113](https://github.com/gh-metrics/metrics/pull/113) (*Steam plugin recently played games & time cutoff filter*), Open [PR #114](https://github.com/gh-metrics/metrics/pull/114) (*Lines plugin null-author template error rendering guard*).
+- **[RayLabsHQ/gitea-mirror](https://github.com/RayLabsHQ/gitea-mirror)**  
+  Contributor — [PR #305 (Merged)](https://github.com/RayLabsHQ/gitea-mirror/pull/305)  
+  *Fix Docker container configuration template and environment variables in `.env.example`.*
 - **[nezhahq/agent](https://github.com/nezhahq/agent)**  
-  Upstream contributor — [PR #233](https://github.com/nezhahq/agent/pull/233) (Fix variable shadowing bug during runtime configuration hot-reload).
+  Contributor — [PR #233](https://github.com/nezhahq/agent/pull/233)  
+  *Fix variable shadowing anomaly during runtime configuration hot-reload.*
+
+### Collaborative & Community Maintenance
+- **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)**  
+  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), maintained collaboratively under [EUR-UN](https://github.com/EUR-UN) with transparent upstream attribution, compatibility fixes, and multi-source update automation.
 
 ---
 
