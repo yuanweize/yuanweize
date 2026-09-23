@@ -40,29 +40,35 @@
 
 ## 🤝 Open-Source Maintenance & Upstream Contributions
 
-### Upstream Contributions
+### Upstream Systems & Kernel-Level Engineering
 
-- **[emqx/hocon](https://github.com/emqx/hocon)**  
-  [![Merged PR](https://img.shields.io/badge/PR_%23318-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/emqx/hocon/pull/318) [![Erlang/OTP](https://img.shields.io/badge/Erlang%2FOTP-A90533?style=flat-square&logo=erlang&logoColor=white)](https://github.com/emqx/hocon)  
-  *Fix CLI two-phase staging and rollback on `ENOSPC` disk exhaustion*: Implemented atomic temporary staging, reverse-order rollback, permission-bit preservation, and real 1 MiB tmpfs ENOSPC fault-injection tests across 580+ Erlang/OTP regression suites.
+- **[nezhahq/agent](https://github.com/nezhahq/agent)** (High-Performance Distributed Telemetry Agent)  
+  [![Merged PR](https://img.shields.io/badge/PR_%23229-MERGED_(v1.15.0)-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/229) [![Merged PR](https://img.shields.io/badge/PR_%23233-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/233) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/nezhahq/agent) [![Intel iGPU](https://img.shields.io/badge/Intel-iGPU_Telemetry-0071C5?style=flat-square&logo=intel&logoColor=white)](https://github.com/nezhahq/agent/pull/229)  
+  - **Linux Intel iGPU Hardware Telemetry Engine (#229 · Tagged in v1.15.0)**:  
+    Architected native Linux Intel iGPU hardware monitoring via Direct Rendering Manager (`/sys/class/drm`, Vendor ID `0x8086`) and PCI topology via `ghw`. Parsed real-time hardware telemetry (`intel_gpu_top`) covering 5 independent silicon execution engines: **RCS** (Render/3D), **BCS** (Blitter), **VCS** (Video Codec), **VECS** (Video Enhancement), and **CCS** (Compute Acceleration). Engineered zero-overhead singleton detection via `sync.Once`, eliminating process polling and memory allocation overhead.
+  - **Runtime Configuration Hot-Reload Concurrency (#233)**:  
+    Identified and resolved a microsecond-level variable shadowing (Variable Shadowing) concurrency defect in `handleApplyConfigTask`, eliminating state desynchronization during dynamic agent configuration reloads in production fleets.
 
-- **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)**  
+- **[emqx/hocon](https://github.com/emqx/hocon)** (Distributed Configuration Engine for EMQX Enterprise Broker)  
+  [![Merged PR](https://img.shields.io/badge/PR_%23318-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/emqx/hocon/pull/318) [![Erlang/OTP](https://img.shields.io/badge/Erlang%2FOTP-A90533?style=flat-square&logo=erlang&logoColor=white)](https://github.com/emqx/hocon) [![Storage Systems](https://img.shields.io/badge/Storage-Atomic_Staging-orange?style=flat-square&logo=linux&logoColor=white)](https://github.com/emqx/hocon/pull/318)  
+  - **CLI Two-Phase Staging & `ENOSPC` Rollback (#318 · Reviewed by Core Maintainer @zmstone)**:  
+    Guarded mission-critical EMQX broker configuration generation against physical disk exhaustion. Built a transactional two-phase staging mechanism with reverse-order fault rollback and strict POSIX file mode preservation (`0600`/`0644`). Proved zero-corruption resilience by constructing a real **1 MiB tmpfs physical disk-full fault injection sandbox** passing 580+ Erlang/OTP regression suites.
+
+- **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)** (Ecosystem Metrics Generation Framework)  
   [![Open PR](https://img.shields.io/badge/PR_%23113-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/113) [![Open PR](https://img.shields.io/badge/PR_%23114-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/114) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/gh-metrics/metrics)  
-  *Steam & Lines Plugins*: Implemented Steam recently played games time cutoff filter and Lines plugin null-author template error rendering guard.
+  - **Pipeline Crash Guard & High-Scale API Thresholding**:  
+    Implemented SVG rendering overflow safeguards for Steam accounts with large libraries via playtime cutoff filters (#113); built a fault-tolerant null-author guard (#114) preventing template renderer crashes when parsing commits with unmapped or ghost authors.
 
-- **[RayLabsHQ/gitea-mirror](https://github.com/RayLabsHQ/gitea-mirror)**  
+- **[RayLabsHQ/gitea-mirror](https://github.com/RayLabsHQ/gitea-mirror)** (Multi-Source Enterprise Git Mirror Pipeline)  
   [![Merged PR](https://img.shields.io/badge/PR_%23305-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror/pull/305) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror)  
-  *Fix Docker container configuration template and environment variables in `.env.example`.*
-
-- **[nezhahq/agent](https://github.com/nezhahq/agent)**  
-  [![PR](https://img.shields.io/badge/PR_%23233-RESOLVED-6e7681?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/233) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/nezhahq/agent)  
-  *Fix variable shadowing anomaly during runtime configuration hot-reload.*
+  - **Container Infrastructure Alignment**:  
+    Fixed Docker environment variable propagation and image repository configuration templates in `.env.example`, ensuring seamless hybrid-cloud container deployments.
 
 ### Collaborative & Community Maintenance
 
 - **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)**  
-  [![Community Distribution](https://img.shields.io/badge/EUR--UN-Community_Maintained-0969da?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN/metrics-community) [![GHCR Container](https://img.shields.io/badge/GHCR-Docker_Image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/EUR-UN/metrics-community/pkgs/container/metrics-community)  
-  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), operated collaboratively under [EUR-UN](https://github.com/EUR-UN) with transparent upstream attribution, security updates, and automated container releases.
+  [![Community Distribution](https://img.shields.io/badge/EUR--UN-Community_Maintained-0969da?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN/metrics-community) [![GHCR Container](https://img.shields.io/badge/GHCR-Docker_Image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/EUR-UN/metrics-community/pkgs/container/metrics-community) [![Release](https://img.shields.io/badge/Release-Active-success?style=flat-square&logo=semanticrelease&logoColor=white)](https://github.com/EUR-UN/metrics-community/releases)  
+  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), operated collaboratively under [EUR-UN](https://github.com/EUR-UN) with transparent upstream attribution, security updates, multi-source update flows, and automated container releases.
 
 ---
 
