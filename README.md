@@ -2,94 +2,144 @@
 
 # Weize Yuan
 
-**Systems Engineer · Open-Source Maintainer**
+**Software & Systems Engineer · Open-Source Maintainer**
 
-[![Managing Director](https://img.shields.io/badge/Managing_Director-HKTSE_s.r.o.-0f172a?style=flat-square&logo=enterprise&logoColor=white)](https://hktse.eu.org)
-[![Maintainer](https://img.shields.io/badge/Maintainer-EUR--UN-1e293b?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
-[![Alumnus](https://img.shields.io/badge/Alumnus-%C4%8CVUT_FEL-005b94?style=flat-square)](https://fel.cvut.cz)
 [![Location](https://img.shields.io/badge/Location-Prague%2C_CZ-0969da?style=flat-square&logo=googlemaps&logoColor=white)](https://www.google.com/maps/place/Prague)
+[![Education](https://img.shields.io/badge/Alumnus-%C4%8CVUT_FEL-005b94?style=flat-square)](https://fel.cvut.cz)
+[![HKTSE](https://img.shields.io/badge/Engineering-HKTSE_s.r.o.-0f172a?style=flat-square&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
+[![EUR-UN](https://img.shields.io/badge/Organization-EUR--UN-10b981?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
+[![Blog](https://img.shields.io/badge/Blog-yuanweize.github.io-f59e0b?style=flat-square&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
+[![Email](https://img.shields.io/badge/Email-info%40eurun.eu.org-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:info@eurun.eu.org)
 
 <br>
 
 <p>
-  I architect and maintain low-latency systems across agentless network telemetry, macOS storage automation,<br>
-  assistive eye-tracking AAC technology, local AI inference, and distributed IoT infrastructure.
+  I build reliability-focused software and systems across backend services, infrastructure automation,<br>
+  network observability, applied AI, and connected/industrial systems.
 </p>
-
-[![Corporate Portal](https://img.shields.io/badge/HKTSE_s.r.o.-0A66C2?style=flat-square&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
-[![Open Source Org](https://img.shields.io/badge/EUR--UN-10B981?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
-[![Technical Blog](https://img.shields.io/badge/yuanweize.github.io-F59E0B?style=flat-square&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
-[![Direct Email](https://img.shields.io/badge/info%40eurun.eu.org-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:info@eurun.eu.org)
 
 </div>
 
 ---
 
-## 🛠️ Selected Engineering Work
+## 🤝 Upstream Engineering & Community Maintenance
 
-| System | Stack | Architecture & Core Capabilities | Artifacts & Proof |
-|:---|:---|:---|:---|
-| **[RouteLens](https://github.com/yuanweize/RouteLens)** | [![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/yuanweize/RouteLens) [![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://github.com/yuanweize/RouteLens) [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/RouteLens) | Agentless network observability platform pinpointing multi-hop latency and packet loss (Local vs Backbone vs DC) via restricted SSH telemetry. | [Release](https://github.com/yuanweize/RouteLens/releases) · [Docs](https://github.com/yuanweize/RouteLens/tree/master/docs) · [GHCR](https://github.com/yuanweize/RouteLens/pkgs/container/routelens) |
-| **[LazyMount-Mac](https://github.com/yuanweize/LazyMount-Mac)** | [![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)](https://github.com/yuanweize/LazyMount-Mac) [![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)](https://github.com/yuanweize/LazyMount-Mac) [![APFS](https://img.shields.io/badge/-APFS-555555?style=flat-square&logo=apple&logoColor=white)](https://github.com/yuanweize/LazyMount-Mac) | Automated macOS storage mount manager (SMB/Rclone) with APFS sparsebundle self-healing and launchd supervision for NAS gaming and cloud drives. | [Release](https://github.com/yuanweize/LazyMount-Mac/releases) · [Docs](https://github.com/yuanweize/LazyMount-Mac/tree/main/docs) · [CI](https://github.com/yuanweize/LazyMount-Mac/actions) |
-| **[OptiKey-ET5-Plugin](https://github.com/yuanweize/OptiKey-ET5-Plugin)** | [![C#](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=csharp&logoColor=white)](https://github.com/yuanweize/OptiKey-ET5-Plugin) [![.NET](https://img.shields.io/badge/-.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://github.com/yuanweize/OptiKey-ET5-Plugin) [![Windows](https://img.shields.io/badge/-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://github.com/yuanweize/OptiKey-ET5-Plugin) | Open-source Tobii Eye Tracker 5 assistive communication (AAC) plugin for OptiKey, enabling gaze-based access for people with ALS/MND. | [Release](https://github.com/yuanweize/OptiKey-ET5-Plugin/releases) · [CI](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions) · [CodeQL](https://github.com/yuanweize/OptiKey-ET5-Plugin/security/code-scanning) |
-| **[Uni-OCR](https://github.com/yuanweize/Uni-OCR)** | [![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/yuanweize/Uni-OCR) [![Apple MLX](https://img.shields.io/badge/-Apple%20MLX-000000?style=flat-square&logo=apple&logoColor=white)](https://github.com/yuanweize/Uni-OCR) [![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/yuanweize/Uni-OCR) | Unified multilingual OCR service with Apple Silicon MLX hardware acceleration, PaddleOCR, and local API inference backends. | [Release](https://github.com/yuanweize/Uni-OCR/releases) · [GHCR](https://github.com/yuanweize/Uni-OCR/pkgs/container/uni-ocr) · [CI](https://github.com/yuanweize/Uni-OCR/actions) |
-| **[SmartHome_Server](https://github.com/yuanweize/SmartHome_Server)** | [![MQTT](https://img.shields.io/badge/-MQTT-660066?style=flat-square&logo=mqtt&logoColor=white)](https://github.com/yuanweize/SmartHome_Server) [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/SmartHome_Server) [![HA](https://img.shields.io/badge/-Home_Assistant-41BDF5?style=flat-square&logo=home-assistant&logoColor=white)](https://github.com/yuanweize/SmartHome_Server) | Smart home IoT telemetry gateway with dual-broker mTLS (Mosquitto/EMQX), sensor fleet simulation, and Home Assistant integration. | [Architecture](https://github.com/yuanweize/SmartHome_Server#architecture) · [Stacks](https://github.com/yuanweize/SmartHome_Server/tree/main/broker) |
-| **[ERPNext-Czech-COA](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter)** | [![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter) [![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter) [![ERPNext](https://img.shields.io/badge/-ERPNext-0089FF?style=flat-square&logo=erpnext&logoColor=white)](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter) | Czech Chart of Accounts (Účtová osnova Decree 500/2002 Sb.) importer and AI-assisted translation engine for ERPNext v14/v15. | [Release](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter/releases) · [Web UI](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter#web-ui) |
+### Upstream Systems Contributions
 
----
+- **[nezhahq/agent](https://github.com/nezhahq/agent)** — High-Performance Distributed Server Telemetry Agent  
+  [![Merged PR](https://img.shields.io/badge/PR_%23229-MERGED_(v1.15.0)-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/229) [![Merged PR](https://img.shields.io/badge/PR_%23233-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/233) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/nezhahq/agent) [![Intel iGPU](https://img.shields.io/badge/Intel-iGPU_Telemetry-0071C5?style=flat-square&logo=intel&logoColor=white)](https://github.com/nezhahq/agent/pull/229)
+  - **Linux Intel iGPU Hardware Telemetry Engine (#229 · Merged & Tagged in v1.15.0)**: Architected native Linux Intel iGPU hardware telemetry via Direct Rendering Manager (`/sys/class/drm`, Vendor ID `0x8086`) and PCI topology via `ghw`. Parsed real-time hardware telemetry (`intel_gpu_top`) covering 5 independent execution engines: **RCS** (Render/3D), **BCS** (Blitter), **VCS** (Video Codec), **VECS** (Video Enhancement), and **CCS** (Compute Acceleration). Engineered zero-overhead singleton detection via `sync.Once` to eliminate process polling overhead.
+  - **Runtime Configuration Hot-Reload Concurrency (#233 · Merged)**: Identified and resolved variable shadowing in `handleApplyConfigTask`, eliminating state desynchronization during dynamic configuration reloads across production fleets.
 
-## 🤝 Open-Source Maintenance & Upstream Contributions
+- **[emqx/hocon](https://github.com/emqx/hocon)** — Configuration Engine for EMQX Enterprise MQTT Broker  
+  [![Merged PR](https://img.shields.io/badge/PR_%23318-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/emqx/hocon/pull/318) [![Erlang/OTP](https://img.shields.io/badge/Erlang%2FOTP-A90533?style=flat-square&logo=erlang&logoColor=white)](https://github.com/emqx/hocon) [![Storage Fault Injection](https://img.shields.io/badge/Fault_Injection-1MiB_tmpfs-orange?style=flat-square&logo=linux&logoColor=white)](https://github.com/emqx/hocon/pull/318)
+  - **CLI Two-Phase Staging & `ENOSPC` Disk-Full Rollback (#318 · Merged · Reviewed by @zmstone)**: Guarded broker configuration generation against physical disk exhaustion. Engineered a transactional two-phase file staging mechanism with reverse-order fault rollback and strict POSIX file mode preservation (`0600`/`0644`). Proved zero-corruption resilience by constructing a 1 MiB tmpfs physical disk-full fault injection test suite passing 580+ Erlang/OTP regression tests.
 
-### Upstream Systems & Kernel-Level Engineering
+- **[RayLabsHQ/gitea-mirror](https://github.com/RayLabsHQ/gitea-mirror)** — Multi-Source Enterprise Git Mirror Pipeline  
+  [![Merged PR](https://img.shields.io/badge/PR_%23305-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror/pull/305) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror)
+  - **Container Infrastructure Alignment (#305 · Merged)**: Fixed Docker environment variable propagation and image repository configuration templates in `.env.example`.
 
-- **[nezhahq/agent](https://github.com/nezhahq/agent)** (High-Performance Distributed Telemetry Agent)  
-  [![Merged PR](https://img.shields.io/badge/PR_%23229-MERGED_(v1.15.0)-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/229) [![Merged PR](https://img.shields.io/badge/PR_%23233-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/nezhahq/agent/pull/233) [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/nezhahq/agent) [![Intel iGPU](https://img.shields.io/badge/Intel-iGPU_Telemetry-0071C5?style=flat-square&logo=intel&logoColor=white)](https://github.com/nezhahq/agent/pull/229)  
-  - **Linux Intel iGPU Hardware Telemetry Engine (#229 · Tagged in v1.15.0)**:  
-    Architected native Linux Intel iGPU hardware monitoring via Direct Rendering Manager (`/sys/class/drm`, Vendor ID `0x8086`) and PCI topology via `ghw`. Parsed real-time hardware telemetry (`intel_gpu_top`) covering 5 independent silicon execution engines: **RCS** (Render/3D), **BCS** (Blitter), **VCS** (Video Codec), **VECS** (Video Enhancement), and **CCS** (Compute Acceleration). Engineered zero-overhead singleton detection via `sync.Once`, eliminating process polling and memory allocation overhead.
-  - **Runtime Configuration Hot-Reload Concurrency (#233)**:  
-    Identified and resolved a microsecond-level variable shadowing (Variable Shadowing) concurrency defect in `handleApplyConfigTask`, eliminating state desynchronization during dynamic agent configuration reloads in production fleets.
-
-- **[emqx/hocon](https://github.com/emqx/hocon)** (Distributed Configuration Engine for EMQX Enterprise Broker)  
-  [![Merged PR](https://img.shields.io/badge/PR_%23318-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/emqx/hocon/pull/318) [![Erlang/OTP](https://img.shields.io/badge/Erlang%2FOTP-A90533?style=flat-square&logo=erlang&logoColor=white)](https://github.com/emqx/hocon) [![Storage Systems](https://img.shields.io/badge/Storage-Atomic_Staging-orange?style=flat-square&logo=linux&logoColor=white)](https://github.com/emqx/hocon/pull/318)  
-  - **CLI Two-Phase Staging & `ENOSPC` Rollback (#318 · Reviewed by Core Maintainer @zmstone)**:  
-    Guarded mission-critical EMQX broker configuration generation against physical disk exhaustion. Built a transactional two-phase staging mechanism with reverse-order fault rollback and strict POSIX file mode preservation (`0600`/`0644`). Proved zero-corruption resilience by constructing a real **1 MiB tmpfs physical disk-full fault injection sandbox** passing 580+ Erlang/OTP regression suites.
-
-- **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)** (Ecosystem Metrics Generation Framework)  
-  [![Open PR](https://img.shields.io/badge/PR_%23113-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/113) [![Open PR](https://img.shields.io/badge/PR_%23114-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/114) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/gh-metrics/metrics)  
-  - **Pipeline Crash Guard & High-Scale API Thresholding**:  
-    Implemented SVG rendering overflow safeguards for Steam accounts with large libraries via playtime cutoff filters (#113); built a fault-tolerant null-author guard (#114) preventing template renderer crashes when parsing commits with unmapped or ghost authors.
-
-- **[RayLabsHQ/gitea-mirror](https://github.com/RayLabsHQ/gitea-mirror)** (Multi-Source Enterprise Git Mirror Pipeline)  
-  [![Merged PR](https://img.shields.io/badge/PR_%23305-MERGED-8957e5?style=flat-square&logo=git&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror/pull/305) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/RayLabsHQ/gitea-mirror)  
-  - **Container Infrastructure Alignment**:  
-    Fixed Docker environment variable propagation and image repository configuration templates in `.env.example`, ensuring seamless hybrid-cloud container deployments.
+- **[gh-metrics/metrics](https://github.com/gh-metrics/metrics)** — Ecosystem Metrics Generation Framework  
+  [![Open PR](https://img.shields.io/badge/PR_%23113-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/113) [![Open PR](https://img.shields.io/badge/PR_%23114-OPEN-238636?style=flat-square&logo=git&logoColor=white)](https://github.com/gh-metrics/metrics/pull/114) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/gh-metrics/metrics)
+  - **Pipeline Overflow & Fault Tolerance Guards (#113 & #114 · Open)**: Implemented playtime cutoff filters to prevent SVG rendering overflow on large Steam libraries (#113); added null-author defensive guards preventing template crashes on unmapped commit authors (#114).
 
 ### Collaborative & Community Maintenance
 
-- **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)**  
-  [![Community Distribution](https://img.shields.io/badge/EUR--UN-Community_Maintained-0969da?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN/metrics-community) [![GHCR Container](https://img.shields.io/badge/GHCR-Docker_Image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/EUR-UN/metrics-community/pkgs/container/metrics-community) [![Release](https://img.shields.io/badge/Release-Active-success?style=flat-square&logo=semanticrelease&logoColor=white)](https://github.com/EUR-UN/metrics-community/releases)  
-  Independent community-maintained fork of [lowlighter/metrics](https://github.com/lowlighter/metrics), operated collaboratively under [EUR-UN](https://github.com/EUR-UN) with transparent upstream attribution, security updates, multi-source update flows, and automated container releases.
+- **[EUR-UN/metrics-community](https://github.com/EUR-UN/metrics-community)** — Community-Maintained Distribution  
+  [![Community Maintained](https://img.shields.io/badge/EUR--UN-Community_Maintained-0969da?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN/metrics-community) [![GHCR](https://img.shields.io/badge/GHCR-Docker_Image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/EUR-UN/metrics-community/pkgs/container/metrics-community) [![Releases](https://img.shields.io/badge/Releases-Active-success?style=flat-square&logo=semanticrelease&logoColor=white)](https://github.com/EUR-UN/metrics-community/releases)  
+  Collaborative community fork of [lowlighter/metrics](https://github.com/lowlighter/metrics) operated under [EUR-UN](https://github.com/EUR-UN). Delivers transparent upstream attribution, security updates, reviewed PR integrations, and automated multi-arch container releases.
 
 ---
 
-## 💻 Tech Stack & Toolchain
+## 🛠️ Selected Systems
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=go,python,cs,dotnet,c,cpp,bash,linux,apple,docker,githubactions,fastapi,postgres,sqlite,cloudflare&theme=dark" alt="Technical Toolchain" />
-</div>
+### 1. [Atomic Sync](https://github.com/yuanweize/Atomic-Sync) — Guarded Directory-Unit Transfer Control Plane
+[![Go](https://img.shields.io/badge/Go-1.24-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/yuanweize/Atomic-Sync)
+[![CI](https://img.shields.io/github/actions/workflow/status/yuanweize/Atomic-Sync/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/yuanweize/Atomic-Sync/actions)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/yuanweize/Atomic-Sync/codeql.yml?branch=main&label=CodeQL&style=flat-square)](https://github.com/yuanweize/Atomic-Sync/security/code-scanning)
+[![GHCR](https://img.shields.io/badge/GHCR-Multi--Arch-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/Atomic-Sync/pkgs/container/atomic-sync)
+[![Release](https://img.shields.io/github/v/release/yuanweize/Atomic-Sync?style=flat-square)](https://github.com/yuanweize/Atomic-Sync/releases)
 
-<br>
+- **Problem**: Conventional sync tools (`rclone move --min-age`) evaluate individual files independently. If a newly written file arrives inside an older project or dataset tree, standard tools transfer the old files first, splitting coherent directory structures across storage tiers.
+- **System**: A dedicated Go control plane that groups directory trees into atomic transfer units based on the newest internal modification time, verifies boundary stability, and orchestrates transfers.
+- **Engineering Decision**: Decoupled control plane from data plane—delegates physical data transfer directly to rclone (`copy` or `move`) while enforcing fail-closed discovery on unclassified files, eliminating destructive destination pruning, and retaining durable SQLite execution history.
+- **Proof**: Multi-arch container images on GHCR, automated CI & CodeQL pipelines, fail-closed policy tests, and documented [Architecture](https://github.com/yuanweize/Atomic-Sync/blob/main/docs/ARCHITECTURE.md) and [Operations](https://github.com/yuanweize/Atomic-Sync/blob/main/docs/OPERATIONS.md) guides.
 
-| Domain | Core Technologies & Tools |
-|:---|:---|
-| **Languages & Runtimes** | [![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)](https://golang.org) [![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org) [![C#](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=csharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/) [![.NET](https://img.shields.io/badge/-.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/) [![C/C++](https://img.shields.io/badge/-C%2FC%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](https://isocpp.org) [![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/) [![Erlang/OTP](https://img.shields.io/badge/-Erlang%2FOTP-A90533?style=flat-square&logo=erlang&logoColor=white)](https://www.erlang.org) |
-| **Operating Systems & Infrastructure** | [![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)](https://kernel.org) [![macOS](https://img.shields.io/badge/-macOS_Darwin-000000?style=flat-square&logo=apple&logoColor=white)](https://apple.com/macos) [![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com) [![WireGuard](https://img.shields.io/badge/-WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)](https://wireguard.com) [![Cloudflare](https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://cloudflare.com) [![GitHub Actions](https://img.shields.io/badge/-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions) |
-| **Observability, Protocols & Services** | [![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com) [![MQTT](https://img.shields.io/badge/-MQTT_mTLS-660066?style=flat-square&logo=mqtt&logoColor=white)](https://mqtt.org) [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://postgresql.org) [![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org) [![SSH Telemetry](https://img.shields.io/badge/-SSH_Telemetry-24292e?style=flat-square&logo=gnubash&logoColor=white)](https://github.com/yuanweize/RouteLens) |
-| **Edge AI & Assistive Technology** | [![Apple MLX](https://img.shields.io/badge/-Apple_Silicon_MLX-000000?style=flat-square&logo=apple&logoColor=white)](https://github.com/ml-explore/mlx) [![Home Assistant](https://img.shields.io/badge/-Home_Assistant-41BDF5?style=flat-square&logo=home-assistant&logoColor=white)](https://home-assistant.io) [![Tobii Eye Tracking](https://img.shields.io/badge/-Tobii_Core_SDK-FF0044?style=flat-square&logo=eye&logoColor=white)](https://developer.tobii.com) [![PaddleOCR](https://img.shields.io/badge/-PaddleOCR-0052cc?style=flat-square&logo=baidu&logoColor=white)](https://github.com/PaddlePaddle/PaddleOCR) |
+### 2. [FormVault](https://github.com/yuanweize/FormVault) — Privacy-First Document Intake & Regulatory Application Platform
+[![FastAPI](https://img.shields.io/badge/FastAPI-Python_3.11-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/yuanweize/FormVault)
+[![React](https://img.shields.io/badge/React_18-TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)](https://github.com/yuanweize/FormVault)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/FormVault)
+[![Frontend CI](https://img.shields.io/github/actions/workflow/status/yuanweize/FormVault/frontend-ci.yml?branch=main&label=Frontend%20CI&style=flat-square)](https://github.com/yuanweize/FormVault/actions)
+[![Backend CI](https://img.shields.io/github/actions/workflow/status/yuanweize/FormVault/backend-ci.yml?branch=main&label=Backend%20CI&style=flat-square)](https://github.com/yuanweize/FormVault/actions)
+
+- **Problem**: Cross-border insurance and statutory document intake requires strict data privacy, non-repudiable auditability, and dynamic regulatory mode gating without exposing sensitive applicant records.
+- **System**: Production document intake portal providing multi-step validation, client-side identity inspection, authenticated AES-256-GCM encrypted storage, and dual-mode business operations.
+- **Engineering Decision**: Implemented a tamper-evident SHA-256 audit hash chain with monotonically increasing sequence numbers and immutable parent hashes; designed dynamic regulatory gating (`LEAD_ONLY` default vs `ASSISTED_APPLICATION` post-broker agreement) to guarantee legal compliance.
+- **Proof**: Deployed in live production ([insure.hktse.eu.org](https://insure.hktse.eu.org/)), automated backend/frontend CI pipelines, WCAG 2.1 AA zero-violation accessibility verification, and turnkey Docker Compose orchestration.
+
+### 3. [RouteLens](https://github.com/yuanweize/RouteLens) — Agentless Multi-Hop Network Observability Platform
+[![Go](https://img.shields.io/badge/Go-1.24-00ADD8?style=flat-square&logo=go&logoColor=white)](https://github.com/yuanweize/RouteLens)
+[![React](https://img.shields.io/badge/React_18-Vite-61DAFB?style=flat-square&logo=react&logoColor=black)](https://github.com/yuanweize/RouteLens)
+[![GHCR](https://img.shields.io/badge/GHCR-Docker_Image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/RouteLens/pkgs/container/routelens)
+[![Release](https://img.shields.io/github/v/release/yuanweize/RouteLens?style=flat-square)](https://github.com/yuanweize/RouteLens/releases)
+
+- **Problem**: Isolating packet loss and latency spikes across distributed hybrid nodes typically requires intrusive background monitoring agents, complicating deployment and increasing the attack surface.
+- **System**: Agentless network diagnostics platform pinpointing multi-hop latency and loss (Local vs Backbone vs Datacenter) via scheduled, restricted SSH probe execution.
+- **Engineering Decision**: Distributed as a single self-contained Go binary with embedded React/ECharts static assets; adopted a pure-Go SQLite storage engine (zero CGO) for frictionless, cross-platform Linux deployments.
+- **Proof**: Multi-platform release packages (.deb, .rpm, binary tarballs), GHCR container images, GoReleaser automation, and live technical documentation.
+
+### 4. [Signal Market Bot](https://github.com/yuanweize/signal-market-bot) — Conversational Commerce & Agent Runtime for Signal
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/yuanweize/signal-market-bot)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/yuanweize/signal-market-bot)
+[![CI](https://img.shields.io/github/actions/workflow/status/yuanweize/signal-market-bot/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/yuanweize/signal-market-bot/actions)
+[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/yuanweize/signal-market-bot/pkgs/container/signal-market-bot-backend)
+[![Release](https://img.shields.io/github/v/release/yuanweize/signal-market-bot?style=flat-square)](https://github.com/yuanweize/signal-market-bot/releases)
+
+- **Problem**: Deploying autonomous LLM agents into private messaging ecosystems carries risks of multi-tenant data leakage, ungrounded actions, and runaway tool invocation during customer interactions.
+- **System**: Signal-native AI customer support and conversational commerce platform with a directed LangGraph workflow, scoped Qdrant vector retrieval, and Model Context Protocol (MCP) tool integration.
+- **Engineering Decision**: Enforced an absolute group privacy invariant (P0: group chats cannot access private user documents or memory); integrated human-in-the-loop supervisory drafts (`draft_for_human`) for sensitive actions; constructed a 32-case deterministic evaluation suite verifying response boundaries.
+- **Proof**: 100% CI pass rate on deterministic contract evaluation (`evals/run_evals.py`), GHCR container builds, and comprehensive architecture documentation.
+
+### 5. [OptiKey ET5 Plugin](https://github.com/yuanweize/OptiKey-ET5-Plugin) — Assistive Gaze Interface for Tobii Eye Tracker 5
+[![C#](https://img.shields.io/badge/C%23-.NET_Framework-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://github.com/yuanweize/OptiKey-ET5-Plugin)
+[![CI](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/build.yml?branch=main&label=CI&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/codeql.yml?branch=main&label=CodeQL&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/security/code-scanning)
+[![Release](https://img.shields.io/github/v/release/yuanweize/OptiKey-ET5-Plugin?style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/releases)
+
+- **Problem**: Commercial eye-tracking devices for gaming (Tobii ET5) lack open-source drivers for assistive Augmentative and Alternative Communication (AAC) software, locking out patients with ALS/MND from affordable communication aids.
+- **System**: Open-source hardware abstraction plugin bridging the Tobii Eye Tracker 5 SDK to the OptiKey assistive typing keyboard.
+- **Engineering Decision**: Designed an interruptible background callback pump to decouple high-frequency hardware gaze streams from UI message loops; engineered bounded shutdown guarantees to prevent unhook crashes; strictly zero telemetry for patient privacy.
+- **Proof**: Tagged production releases with SHA-256 checksums, automated .NET build CI, CodeQL scanning, and active open-source adoption by AAC practitioners.
+
+### Other Systems & Tooling
+
+- **[LazyMount-Mac](https://github.com/yuanweize/LazyMount-Mac)** — Automated macOS storage mount manager (SMB/Rclone) featuring APFS sparsebundle self-healing and launchd daemon supervision.
+- **[Uni-OCR](https://github.com/yuanweize/Uni-OCR)** — Unified multilingual OCR API service with Apple Silicon MLX hardware-accelerated VLM and PaddleOCR backends.
+- **[SmartHome_Server](https://github.com/yuanweize/SmartHome_Server)** — Dual-broker MQTT (Mosquitto / EMQX) telemetry gateway with mutual TLS (mTLS), sensor simulation, and Home Assistant integration.
+- **[ERPNext-Czech-COA](https://github.com/yuanweize/ERPNext-Czech-Uctova-Osnova-COA-Converter)** — Czech Chart of Accounts (Decree 500/2002 Sb.) statutory parser and localization engine for ERPNext v14/v15.
 
 ---
 
-## 📊 Overview
+## 🏭 Industrial & Connected Systems
+
+Alongside software engineering, I maintain direct hands-on experience integrating industrial automation, robotics, and connected hardware across European manufacturing sites:
+
+- **Industrial Automation & PLC/MES Integration**: Field commissioning of Siemens S7-1200 PLCs and HMIs; integrated real-time PLC-to-MES barcode traceability and production data logging channels.
+- **Robotic Workcell Integration**: On-site programming, calibration, and integration of ABB industrial robotic cells across automotive and manufacturing facilities in Central/Eastern Europe (Czechia, Slovakia, Romania, Poland).
+- **Connected Field Devices & IoT**: Firmware development for ESP32 telemetry nodes, RS-485 / Modbus serial communication buses, and secure MQTT telemetry using mutual TLS (mTLS).
+
+---
+
+## 🎯 Engineering Focus
+
+- **Backend & Distributed Systems**: Python · Go · FastAPI · LangGraph · PostgreSQL · SQLite · Redis · Asynchronous Workflows
+- **Systems & Infrastructure Automation**: Linux (POSIX) · Docker · Bash · macOS Darwin · CI/CD (GitHub Actions) · Release Engineering
+- **Observability & Network Protocols**: Network Diagnostics · SSH Telemetry · MQTT (mTLS) · WireGuard · Erlang/OTP Configuration
+- **Connected & Industrial Systems**: Siemens S7-1200 · ABB Robotics · Modbus / RS-485 · ESP32 · Hardware-Interfaced Software
+
+---
+
+## 📊 Activity
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="70%">
@@ -97,16 +147,16 @@
 
 ---
 
-## 📬 Connect
+## 📬 Contact & Organizations
 
 <div align="center">
 
-[![HKTSE s.r.o.](https://img.shields.io/badge/HKTSE_s.r.o.-Corporate_Portal-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
+[![HKTSE s.r.o.](https://img.shields.io/badge/HKTSE_s.r.o.-Independent_Engineering-0A66C2?style=flat-square&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
 &nbsp;
-[![EUR-UN](https://img.shields.io/badge/EUR--UN-Open_Source_Org-10B981?style=for-the-badge&logo=github&logoColor=white)](https://eurun.eu.org)
+[![EUR-UN](https://img.shields.io/badge/EUR--UN-Open_Source_Org-10B981?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
 &nbsp;
-[![Technical Blog](https://img.shields.io/badge/Tech_Blog-yuanweize.github.io-F59E0B?style=for-the-badge&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
+[![Technical Blog](https://img.shields.io/badge/Blog-yuanweize.github.io-F59E0B?style=flat-square&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
 &nbsp;
-[![Email Contact](https://img.shields.io/badge/Direct_Email-info%40eurun.eu.org-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@eurun.eu.org)
+[![Email](https://img.shields.io/badge/Email-info%40eurun.eu.org-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:info@eurun.eu.org)
 
 </div>
