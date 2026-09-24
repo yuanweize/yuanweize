@@ -7,7 +7,7 @@
 [![Location](https://img.shields.io/badge/Location-Prague%2C_CZ-0969da?style=flat-square&logo=googlemaps&logoColor=white)](https://www.google.com/maps/place/Prague)
 [![Education](https://img.shields.io/badge/Alumnus-%C4%8CVUT_FEL-005b94?style=flat-square)](https://fel.cvut.cz)
 [![HKTSE](https://img.shields.io/badge/Engineering-HKTSE_s.r.o.-0f172a?style=flat-square&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
-[![EUR-UN](https://img.shields.io/badge/Organization-EUR--UN-10b981?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
+[![EUR-UN](https://img.shields.io/badge/Organization-EUR--UN-10b981?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN)
 [![Blog](https://img.shields.io/badge/Blog-yuanweize.github.io-f59e0b?style=flat-square&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
 [![Email](https://img.shields.io/badge/Email-info%40eurun.eu.org-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:info@eurun.eu.org)
 
