@@ -102,8 +102,8 @@
 
 ### 5. [OptiKey ET5 Plugin](https://github.com/yuanweize/OptiKey-ET5-Plugin) — Assistive Gaze Interface for Tobii Eye Tracker 5
 [![C#](https://img.shields.io/badge/C%23-.NET_Framework-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://github.com/yuanweize/OptiKey-ET5-Plugin)
-[![CI](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/build.yml?branch=main&label=CI&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/codeql.yml?branch=main&label=CodeQL&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/security/code-scanning)
+[![CI](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/build-and-test.yml?branch=main&label=CI&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions/workflows/build-and-test.yml)
+[![Release CI](https://img.shields.io/github/actions/workflow/status/yuanweize/OptiKey-ET5-Plugin/release.yml?branch=main&label=Release%20CI&style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/actions/workflows/release.yml)
 [![Release](https://img.shields.io/github/v/release/yuanweize/OptiKey-ET5-Plugin?style=flat-square)](https://github.com/yuanweize/OptiKey-ET5-Plugin/releases)
 
 - **Problem**: Commercial eye-tracking devices for gaming (Tobii ET5) lack open-source drivers for assistive Augmentative and Alternative Communication (AAC) software, locking out patients with ALS/MND from affordable communication aids.
