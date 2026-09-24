@@ -153,7 +153,7 @@ Alongside software engineering, I maintain direct hands-on experience integratin
 
 [![HKTSE s.r.o.](https://img.shields.io/badge/HKTSE_s.r.o.-Independent_Engineering-0A66C2?style=flat-square&logo=googlechrome&logoColor=white)](https://hktse.eu.org)
 &nbsp;
-[![EUR-UN](https://img.shields.io/badge/EUR--UN-Open_Source_Org-10B981?style=flat-square&logo=github&logoColor=white)](https://eurun.eu.org)
+[![EUR-UN](https://img.shields.io/badge/EUR--UN-Open_Source_Org-10B981?style=flat-square&logo=github&logoColor=white)](https://github.com/EUR-UN)
 &nbsp;
 [![Technical Blog](https://img.shields.io/badge/Blog-yuanweize.github.io-F59E0B?style=flat-square&logo=blogger&logoColor=white)](https://yuanweize.github.io/)
 &nbsp;
