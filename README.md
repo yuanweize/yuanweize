@@ -143,6 +143,10 @@ Alongside software engineering, I maintain direct hands-on experience integratin
 ## 📊 Activity
 
 <div align="center">
+  <a href="https://github.com/yuanweize">
+    <img src="https://github-readme-stats-seven-inky-41.vercel.app/api?username=yuanweize&theme=panda&show_icons=true&count_private=true&show=reviews" alt="yuanweize's GitHub stats" />
+  </a>
+  <br><br>
   <img src="https://raw.githubusercontent.com/yuanweize/yuanweize/main/github-metrics.svg" alt="GitHub Metrics" width="70%">
 </div>
 
